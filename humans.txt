@@ -1,0 +1,4 @@
+/* SITE */
+Name: 500888.com — Prosperity Numbers, Zodiac & Chinese Culture Hub
+Standards: HTML5, CSS3, vanilla JavaScript, Jekyll (GitHub Pages)
+Interest in this website / domain / sponsorship / advertising / partnership: https://web.works/contact
