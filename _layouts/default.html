@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+{% if page.basefix %}<script>(function(){var p=location.hostname.endsWith('github.io')?'/'+location.pathname.split('/')[1]+'/':'/';document.write('<base href="'+p+'">');})();</script>{% endif %}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.title }}</title>
+<meta name="description" content="{{ page.desc }}">
+<link rel="canonical" href="{{ page.canonical }}">
+<meta name="robots" content="{{ page.robots | default: 'index,follow,max-image-preview:large' }}">
+<meta name="theme-color" content="#c8102e">
+<meta property="og:type" content="{{ page.ogtype | default: 'website' }}">
+<meta property="og:site_name" content="500888">
+<meta property="og:title" content="{{ page.title }}">
+<meta property="og:description" content="{{ page.desc }}">
+<meta property="og:url" content="{{ page.canonical }}">
+<meta property="og:image" content="https://500888.com/assets/img/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="{{ page.root }}assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="{{ page.root }}assets/img/icon-192.png">
+<link rel="manifest" href="{{ page.root }}manifest.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ page.root }}assets/css/style.css">
+<script>document.documentElement.classList.add('js');try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "500888", "url": "https://500888.com/", "description": "Prosperity numbers, Chinese zodiac, feng shui and festival tools."}</script>
+</head>
+<body data-root="{{ page.root }}">
+<a class="skip" href="#main">Skip to content</a>
+<div class="topbar" role="note">Contact, if you are interested in this website / domain name / Sponsorship / Advertisement / Partnership — <a href="https://web.works/contact" target="_blank" rel="noopener">contact here</a></div>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="{{ page.root }}index.html" aria-label="500888 home"><img src="{{ page.root }}assets/img/logo.svg" alt="" width="40" height="40"><span><b>500<span>888</span></b><small>Prosperity Hub</small></span></a>
+    <ul class="menu" id="menu">
+      <li><button class="icon-btn menu-close" type="button" data-menu-close aria-label="Close menu">✕</button></li>
+      <li><button class="mlink" type="button" aria-haspopup="true">Tools ▾</button><ul class="dropdown"><li><a href="{{ page.root }}lucky-number-analyzer.html">Lucky Number Analyzer<small>Score any phone, plate, price or domain</small></a></li><li><a href="{{ page.root }}zodiac.html">Zodiac Finder & Compatibility<small>Your sign, element & best matches</small></a></li><li><a href="{{ page.root }}feng-shui.html">Feng Shui Kua Calculator<small>Your 4 lucky directions</small></a></li><li><a href="{{ page.root }}hongbao.html">Red Envelope (Hongbao) Calculator<small>How much to give, by occasion</small></a></li><li><a href="{{ page.root }}lucky-tools.html">Lucky Price, Dates & Fortune<small>Pricing, date picker, fortune sticks</small></a></li></ul></li><li><a href="{{ page.root }}numbers.html">Numbers</a></li><li><a href="{{ page.root }}festivals.html">Festivals</a></li><li><a href="{{ page.root }}guides.html">Guides</a></li><li><a href="{{ page.root }}videos.html">Videos</a></li><li><button class="mlink" type="button" aria-haspopup="true">Business ▾</button><ul class="dropdown"><li><a href="{{ page.root }}report.html">Free Prosperity Report<small>Personalised numbers, dates & directions</small></a></li><li><a href="{{ page.root }}business.html">Prosperity Marketing Consulting<small>Win Chinese-speaking customers</small></a></li><li><a href="{{ page.root }}business.html#numbers">Premium Numbers & Domains<small>Buy, sell or appraise lucky assets</small></a></li></ul></li><li><button class="mlink" type="button" aria-haspopup="true">Community ▾</button><ul class="dropdown"><li><a href="{{ page.root }}contest.html">Lucky 888 Draw<small>Enter free — win prosperity prizes</small></a></li><li><a href="{{ page.root }}support.html">Support 500888<small>Donate, sponsor & advertise</small></a></li><li><a href="{{ page.root }}careers.html">Careers & Creators<small>Write, film, consult with us</small></a></li><li><a href="{{ page.root }}about.html">About<small>Mission & editorial standards</small></a></li><li><a href="{{ page.root }}contact.html">Contact<small>Questions, partnerships, press</small></a></li></ul></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="icon-btn" type="button" data-theme-toggle aria-label="Toggle dark mode">☾</button>
+      <a class="btn btn-primary btn-sm" href="{{ page.root }}report.html">Free Report</a>
+      <button class="icon-btn burger" type="button" data-menu-open aria-label="Open menu" aria-controls="menu">☰</button>
+    </div>
+  </div>
+</header>
+<div class="scrim"></div>
+<main id="main">
+{{ content }}
+</main>
+{% if page.exit %}<dialog id="exit-offer" class="tool" style="max-width:520px;border:0">
+  <h3 class="mt0">Before you go — want your free Prosperity Report?</h3>
+  <p>Your lucky numbers, best dates for 2027 and your 4 lucky directions, emailed to you. No cost.</p>
+  <div class="pill-row"><a class="btn btn-primary" href="{{ page.root }}report.html">Yes, send my report</a><button class="btn btn-ghost" type="button" data-close-dialog>No thanks</button></div>
+</dialog>{% endif %}
+<footer class="site-footer">
+  <div class="container">
+    <div class="fgrid">
+      <div>
+        <a class="brand" href="{{ page.root }}index.html" style="color:#fff"><img src="{{ page.root }}assets/img/logo.svg" alt="" width="40" height="40"><span><b style="color:#fff">500<span>888</span></b><small style="color:#a8968a">Prosperity Hub</small></span></a>
+        <p class="mt1" style="font-size:.93rem">Free tools and guides on Chinese lucky numbers, zodiac, feng shui and festivals — for families, travellers, marketers and entrepreneurs.</p>
+        <form data-form="Newsletter signup" data-success="You're in! Watch your inbox for your first lucky-number email." class="news-inline">
+          <input class="hp" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <label class="sr-only" for="fnews">Email</label>
+          <input id="fnews" type="email" name="email" placeholder="Your email for weekly luck" required>
+          <button class="btn btn-gold btn-sm" type="submit">Join</button>
+        </form>
+      </div>
+      <div><h4>Tools</h4><ul>
+        <li><a href="{{ page.root }}lucky-number-analyzer.html">Lucky Number Analyzer</a></li>
+        <li><a href="{{ page.root }}zodiac.html">Zodiac & Compatibility</a></li>
+        <li><a href="{{ page.root }}feng-shui.html">Kua Number Calculator</a></li>
+        <li><a href="{{ page.root }}hongbao.html">Hongbao Calculator</a></li>
+        <li><a href="{{ page.root }}lucky-tools.html">Lucky Price & Dates</a></li>
+      </ul></div>
+      <div><h4>Learn</h4><ul>
+        <li><a href="{{ page.root }}numbers.html">Number Dictionary</a></li>
+        <li><a href="{{ page.root }}festivals.html">Festival Calendar</a></li>
+        <li><a href="{{ page.root }}guides.html">Guides</a></li>
+        <li><a href="{{ page.root }}videos.html">Videos</a></li>
+      </ul></div>
+      <div><h4>Business</h4><ul>
+        <li><a href="{{ page.root }}report.html">Free Prosperity Report</a></li>
+        <li><a href="{{ page.root }}business.html">Consulting</a></li>
+        <li><a href="{{ page.root }}business.html#numbers">Premium Numbers</a></li>
+        <li><a href="{{ page.root }}support.html#advertise">Advertise</a></li>
+        <li><a href="https://web.works/contact" target="_blank" rel="noopener">Buy / partner on 500888.com</a></li>
+      </ul></div>
+      <div><h4>Community</h4><ul>
+        <li><a href="{{ page.root }}contest.html">Lucky 888 Draw</a></li>
+        <li><a href="{{ page.root }}support.html">Donate & Support</a></li>
+        <li><a href="{{ page.root }}careers.html">Careers</a></li>
+        <li><a href="{{ page.root }}about.html">About</a></li>
+        <li><a href="{{ page.root }}contact.html">Contact</a></li>
+      </ul></div>
+    </div>
+    <div class="legal-strip">
+      <p><b>Trademark &amp; copyright disclosure:</b> 500888.com is an independent informational and entertainment website. It is not affiliated with, endorsed by or sponsored by any company, brand, lottery, bank or organisation that uses "500", "888" or "500888" in its name, number or marks. All third-party names, trademarks and videos remain the property of their respective owners and are used for identification or embedded under the owners' platform terms. Content on this site is for cultural education and entertainment only and is not financial, legal, medical or gambling advice. <a href="{{ page.root }}legal.html">Full disclosure</a>.</p>
+      <p>© <span data-year>2026</span> 500888.com · Original text, tools, graphics and code © 500888.com. All rights reserved. · <a href="{{ page.root }}privacy.html">Privacy</a> · <a href="{{ page.root }}terms.html">Terms</a> · <a href="{{ page.root }}legal.html">Legal &amp; Disclosures</a> · <a href="{{ page.root }}sitemap.xml">Sitemap</a></p>
+    </div>
+  </div>
+</footer>
+<button class="icon-btn to-top" type="button" aria-label="Back to top">↑</button>
+<div class="cookie" role="dialog" aria-label="Cookie consent">
+  <b>We value your privacy.</b> We use cookies for essential features, anonymous analytics and (once enabled) ads that keep our tools free. <a href="{{ page.root }}privacy.html">Learn more</a>.
+  <div class="row"><button class="btn btn-primary btn-sm" data-consent="all">Accept all</button><button class="btn btn-ghost btn-sm" data-consent="essential">Essential only</button></div>
+</div>
+<script src="{{ page.root }}assets/js/config.js"></script><script src="{{ page.root }}assets/js/main.js" defer></script>{% if page.tools %}<script src="{{ page.root }}assets/js/tools.js" defer></script>{% endif %}
+</body>
+</html>

@@ -1,0 +1,11 @@
+title: 500888
+description: Lucky numbers, Chinese zodiac & prosperity tools
+url: https://500888.com
+markdown: kramdown
+exclude:
+  - README.md
+  - build
+  - Gemfile
+  - Gemfile.lock
+include:
+  - .well-known
