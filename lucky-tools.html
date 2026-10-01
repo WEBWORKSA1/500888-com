@@ -1,0 +1,21 @@
+---
+layout: "default"
+title: "Lucky Price Finder, Lucky Date Picker & Fortune Sticks | 500888"
+desc: "Find culturally lucky price points, rank the best dates of any month for weddings, launches and contracts, and draw a fortune stick."
+root: ""
+canonical: "https://500888.com/lucky-tools.html"
+tools: true
+exit: true
+---
+<section class="page-hero"><div class="container"><nav class="crumbs" aria-label="Breadcrumb"><a href="{{ page.root }}index.html">Home</a> › Tools › Lucky Price, Dates & Fortune</nav><h1>Lucky Price, Dates &amp; Fortune</h1><p class="lead">Practical prosperity tools for shops, sellers, planners — and anyone who wants a little luck today.</p><div class="tabs mt1"><a class="btn btn-ghost btn-sm" href="#price">💰 Lucky price</a> <a class="btn btn-ghost btn-sm" href="#dates">📅 Lucky dates</a> <a class="btn btn-ghost btn-sm" href="#fortune">🎋 Fortune sticks</a></div></div></section>
+<section id="price"><div class="container"><div class="tool"><h2>💰 Lucky Price Finder</h2><p class="muted">Enter your current price; we'll find nearby price points that score higher with Chinese-speaking customers.</p>
+  <form data-tool="price"><div class="form-row"><div class="field"><label for="p-p">Current price</label><input id="p-p" name="price" type="number" min="1" step="0.01" placeholder="e.g. 1249" required></div><div class="field"><label>&nbsp;</label><button class="btn btn-primary btn-block" type="submit">Find lucky prices</button></div></div></form>
+  <div class="result mt1" id="price-out" aria-live="polite"></div></div></div></section>
+<div class="container"><div class="ad-slot" data-slot="leaderboard"></div></div>
+<section id="dates" class="section-alt"><div class="container"><div class="tool"><h2>📅 Lucky Date Picker</h2><p class="muted">Rank every day in a month by number luck, weekday and festivals.</p>
+  <form data-tool="dates"><div class="form-row three"><div class="field"><label for="d-m">Month</label><input id="d-m" name="month" type="month" required></div><div class="field"><label for="d-p">Purpose</label><select id="d-p" name="purpose"><option value="business">Business launch / opening</option><option value="contract">Signing a contract</option><option value="wedding">Wedding</option><option value="move">Moving house</option><option value="party">Party / celebration</option></select></div><div class="field"><label>&nbsp;</label><button class="btn btn-primary btn-block" type="submit">Rank dates</button></div></div></form>
+  <div class="result mt1" id="dates-out" aria-live="polite"></div></div></div></section>
+<section id="fortune"><div class="container"><div class="grid g2">
+  <div class="tool"><h2>🎋 Fortune sticks (求签)</h2><p class="muted">Hold a question in mind, then shake.</p><div class="fortune" id="fortune-out"><p class="muted mb0">Your fortune appears here.</p></div><button class="btn btn-gold btn-block mt1" type="button" data-tool="fortune">Shake the sticks</button><p class="form-note">For entertainment. Kau cim is a temple tradition — this is a playful digital version.</p></div>
+  <div class="tool center"><h2>✨ Today's lucky number</h2><div data-daily></div><label class="mt1" for="ds2">Personalise by sign</label><select id="ds2" data-daily-animal></select><button class="btn btn-ghost btn-sm mt1" type="button" data-share="Here's my lucky number today from 500888:">Share</button></div>
+</div></div></section>
